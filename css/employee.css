@@ -196,4 +196,7 @@ label {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
+    .profile-radio-content{
+        flex-flow: wrap;
+    }
 }

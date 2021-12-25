@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="..\Css\Employee_Payroll.css">
+        <title> Employee payroll form </title> 
+    </head>
+    <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Payroll App</title>
-    <link rel="stylesheet" href="../css/employee.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-</head>
+      <!-- UC 1 -->
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="..\Assets\images\logo.png" alt="logo">
+                <div>
+                    <span class="emp-text">EMPLOYEE</span><br>
+                    <span class="emp-text emp-payroll">PAYROLL</span>
+                </div>
+            </div>
+        </header>
 
-<body>
-    <!-- UC 1 -->
-<header class="header">
-    <div class="logo-content">
-        <img src="..\assets\logo.png" alt="logo">
-        <div>
-            <span class="emp-text">EMPLOYEE</span><br/>
-            <span class="emp-text emp-payroll">PAYROLL</span> 
+      <!-- UC 2 -->
+        <div class="form-content">
+            <form class="form" action="#" onsubmit="save(event);return false">
+                <div class="form-head"> Employee payroll form </div>
+                <div class="row-content">
+                    <label class="label text" for="name">Name</label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Your name..." required>
+                </div>
+            </form>
         </div>
-    </div>
-</header>
-</body>
+    </body>
 </html>
